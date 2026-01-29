@@ -310,21 +310,3 @@ Kaggle Dataset: Electric Vehicle Population Data
 ⭐ If you found this project useful, please consider giving it a star!
 
 ---
-
-### **Step 2: Push to GitHub**
-
-Run these commands in your terminal:
-
-```bash
-# Add all files
-git add .
-
-# Commit with message
-git commit -m "Initial commit: EV Analytics & Performance Prediction project"
-
-# Create GitHub repo (go to github.com and create a new repository named: EV-Analytics-Project)
-# Then connect and push:
-
-git remote add origin https://github.com/Devnaam/EV-analytics
-git branch -M main
-git push -u origin main
