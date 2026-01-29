@@ -27,32 +27,32 @@ This project leverages data analytics and machine learning to analyze the Electr
 
 ## 📁 Project Structure
 
+```
 EV-Analytics-Project/
 │
 ├── data/
-│ └── Electric_Vehicle_Population_Data.csv
+│   └── Electric_Vehicle_Population_Data.csv
 │
 ├── visualizations/
-│ ├── 01_distributions.png
-│ ├── 02_range_by_year.png
-│ ├── 03_manufacturer_analysis.png
-│ ├── 04_range_by_manufacturer.png
-│ ├── 05_boxplots.png
-│ ├── 06_model_comparison.png
-│ ├── 07_actual_vs_predicted.png
-│ ├── 08_residual_plots.png
-│ └── 09_feature_importance.png
+│   ├── 01_distributions.png
+│   ├── 02_range_by_year.png
+│   ├── 03_manufacturer_analysis.png
+│   ├── 04_range_by_manufacturer.png
+│   ├── 05_boxplots.png
+│   ├── 06_model_comparison.png
+│   ├── 07_actual_vs_predicted.png
+│   ├── 08_residual_plots.png
+│   └── 09_feature_importance.png
 │
 ├── models/
-│ ├── best_model_xgboost.pkl
-│ └── model_comparison_results.csv
+│   ├── best_model_xgboost.pkl
+│   └── model_comparison_results.csv
 │
 ├── ev_analytics.py
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
-text
+```
 
 ---
 
@@ -108,9 +108,11 @@ text
 ```bash
 git clone https://github.com/YOUR_USERNAME/EV-Analytics-Project.git
 cd EV-Analytics-Project
-Create virtual environment
+```
 
-bash
+2. **Create virtual environment**
+
+```bash
 python -m venv venv
 
 # Activate virtual environment
@@ -118,21 +120,29 @@ python -m venv venv
 venv\Scripts\activate
 # Mac/Linux:
 source venv/bin/activate
-Install dependencies
+```
 
-bash
+3. **Install dependencies**
+
+```bash
 pip install -r requirements.txt
-Download dataset
+```
+
+4. **Download dataset**
 
 Download the dataset from Kaggle
 
 Place Electric_Vehicle_Population_Data.csv in the data/ folder
 
-Run the project
+5. **Run the project**
 
-bash
+```bash
 python ev_analytics.py
-📊 Project Methodology
+```
+
+---
+
+## 📊 Project Methodology
 Phase 1: Data Collection
 Loaded Electric Vehicle Population dataset
 
@@ -299,9 +309,7 @@ Kaggle Dataset: Electric Vehicle Population Data
 
 ⭐ If you found this project useful, please consider giving it a star!
 
-text
-
-***
+---
 
 ### **Step 2: Push to GitHub**
 
