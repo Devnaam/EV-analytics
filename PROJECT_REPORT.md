@@ -4,12 +4,12 @@
 ---
 
 **Submitted by:**  
-[Your Name]  
-[Roll Number]  
-[Department/Branch]  
+[Devnaam Priyadershi]  
+[22781A32G0]  
+[CSE-DS]  
 
 **Submitted to:**  
-[University/College Name]  
+[SVCET]  
 [Department Name]  
 
 **Under the Guidance of:**  
@@ -888,7 +888,7 @@ D. Model Comparison Table
 (See models/model_comparison_results.csv)
 
 E. GitHub Repository
-Link: https://github.com/YOUR_USERNAME/EV-Analytics-Project
+Link: https://github.com/Devnaam/EV-analytics
 
 End of Report
 
@@ -897,19 +897,6 @@ Declaration:
 I hereby declare that this project report titled "Electric Vehicle Analytics & Performance Prediction" is a record of authentic work carried out by me under the guidance of [Guide Name]. The work embodied in this report has been done by me and has not been submitted elsewhere for a degree.
 
 Signature:
-[Your Name]
+[Devnaam Priyadershi]
 
 Date: January 29, 2026
-
-text
-
-***
-
-## **What's Next?**
-
-1. ✅ **Save this as PROJECT_REPORT.md**
-2. ✅ **Create PowerPoint Presentation** (Want me to create slide content?)
-3. ✅ **Prepare Viva Questions & Answers** (Want me to prepare this?)
-4. ✅ **Convert report to PDF** (Use Pandoc or Word)
-
-**Which one do you want me to help with next?** 🚀

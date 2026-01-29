@@ -12,13 +12,7 @@ ENV/
 .ipynb_checkpoints
 *.ipynb_checkpoints
 
-# Data files
-*.csv
-*.xlsx
 
-# Models
-models/*.pkl
-*.h5
 
 # IDE
 .vscode/

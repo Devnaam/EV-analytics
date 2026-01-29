@@ -325,6 +325,6 @@ git commit -m "Initial commit: EV Analytics & Performance Prediction project"
 # Create GitHub repo (go to github.com and create a new repository named: EV-Analytics-Project)
 # Then connect and push:
 
-git remote add origin https://github.com/YOUR_USERNAME/EV-Analytics-Project.git
+git remote add origin https://github.com/Devnaam/EV-analytics
 git branch -M main
 git push -u origin main
