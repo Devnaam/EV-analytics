@@ -12,6 +12,17 @@ import plotly.graph_objects as go
 from PIL import Image
 import os
 
+
+# Handle missing files gracefully for deployment
+import warnings
+warnings.filterwarnings('ignore')
+
+# Session state initialization
+if 'initialized' not in st.session_state:
+    st.session_state.initialized = True
+
+
+
 # Page configuration
 st.set_page_config(
     page_title="EV Analytics Dashboard",
@@ -54,6 +65,36 @@ st.markdown("""
 # Load data and model
 @st.cache_data
 def load_data():
+    """Load the cleaned dataset with error handling"""
+    try:
+        # Try multiple paths
+        possible_paths = [
+            'data/Electric_Vehicle_Population_Data.csv',
+            'Electric_Vehicle_Population_Data.csv',
+            '../data/Electric_Vehicle_Population_Data.csv'
+        ]
+        
+        for path in possible_paths:
+            if os.path.exists(path):
+                df = pd.read_csv(path)
+                # Apply cleaning
+                df = df[df['Electric Vehicle Type'] == 'Battery Electric Vehicle (BEV)']
+                df = df[df['Electric Range'] > 0]
+                df = df[df['Model Year'] >= 2016]
+                
+                # Keep top 15 manufacturers
+                top_makes = df['Make'].value_counts().head(15).index
+                df = df[df['Make'].isin(top_makes)]
+                
+                return df
+        
+        st.error("Dataset not found. Please check data folder.")
+        return None
+        
+    except Exception as e:
+        st.error(f"Error loading data: {e}")
+        return None
+
     """Load the cleaned dataset"""
     try:
         df = pd.read_csv('data/Electric_Vehicle_Population_Data.csv')
@@ -862,7 +903,7 @@ elif page == "ℹ️ About":
     with col3:
         st.markdown("""
         **📧 Contact**  
-        [your.email@example.com](mailto:your.email@example.com)
+        [workwithdevnaam@gmail.com](mailto:your.email@example.com)
         """)
     
     st.markdown("---")
