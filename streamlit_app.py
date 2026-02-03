@@ -1239,7 +1239,18 @@ elif page == "ℹ️ About":
 st.markdown("---")
 st.markdown(f"""
 <div style="text-align: center; color: #7f8c8d;">
-    <p>🚗 Electric Vehicle Analytics Dashboard v2.0 | Built with Streamlit | © 2026</p>
-    <p style="font-size: 12px;">Theme: {st.session_state.theme} | Last Updated: {datetime.now().strftime('%Y-%m-%d %H:%M')}</p>
+    <p>
+        🚗 Electric Vehicle Analytics Dashboard v2.0 | 
+        Design and Developed by 
+        <a href="https://devnaam.us" target="_blank" style="color: #7f8c8d; text-decoration: none; font-weight: 600;">
+            Devnaam Priyadershi
+        </a> 
+        | © 2026
+    </p>
+    <p style="font-size: 12px;">
+        Theme: {st.session_state.theme} | 
+        Last Updated: {datetime.now().strftime('%Y-%m-%d %H:%M')}
+    </p>
 </div>
+
 """, unsafe_allow_html=True)
